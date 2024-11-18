@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-73+++d5m839wc9&j($q#7t&+!7-kap8k&#oz(6y2d^r--lx08@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*'] #
 
 
 # Application definition
@@ -78,11 +78,8 @@ WSGI_APPLICATION = 'CinemaAPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'CinemaAPI',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME' : BASE_DIR
+
     }
 }
 
@@ -141,3 +138,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
